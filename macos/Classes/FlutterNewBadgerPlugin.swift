@@ -19,8 +19,7 @@ public class FlutterNewBadgerPlugin: NSObject, FlutterPlugin {
         }
 
       case "removeBadge":
-        NSApplication.shared.dockTile.badgeLabel = nil
-        NSApplication.shared.dockTile.showsApplicationBadge = false
+        NSApplication.shared.dockTile.badgeLabel = ""
         result(nil)
 
       default:
